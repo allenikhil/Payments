@@ -1,4 +1,12 @@
 package implementations;
 
-public class UPIPayment {
+import interfaces.PaymentInterface;
+
+import java.math.BigDecimal;
+
+public class UPIPayment implements PaymentInterface {
+    @Override
+    public void pay(BigDecimal amount) {
+        IO.println(amount +" Paid through UPI");
+    }
 }

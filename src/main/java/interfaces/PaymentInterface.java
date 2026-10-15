@@ -1,4 +1,7 @@
 package interfaces;
 
-public class PaymentInterface {
+import java.math.BigDecimal;
+
+public interface PaymentInterface {
+    void pay(BigDecimal amount);
 }
